@@ -1,6 +1,7 @@
 import { ObjectId } from "mongodb";
 import { connectToDB } from "@/util/database.js";
 import { notFound } from "next/navigation"
+import Comment from './Comment.js'
 
 export default async function Detail(props) {
     console.log(props)
@@ -17,6 +18,7 @@ export default async function Detail(props) {
         <h4>상세페이지임</h4>
         <h4>{result.title}</h4>
         <p>{result.content}</p>
+        <Comment _id={ result._id.toString() }/> 
       </div>
     );
   }
