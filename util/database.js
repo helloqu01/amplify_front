@@ -2,7 +2,7 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
 
 // MongoDB connection URL and options
-const uri = "mongodb+srv://root:00000000@cluster0.5atbwn9.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://root:00000000@cluster0.5atbwn9.mongodb.net/forum?retryWrites=true&w=majority";
 const options = {
   serverApi: {
     version: ServerApiVersion.v1,
